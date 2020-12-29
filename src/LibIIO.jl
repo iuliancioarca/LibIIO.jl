@@ -1,5 +1,8 @@
 module LibIIO
 
-greet() = print("Hello World!")
+using Libdl
+include("ctypes.jl")
+include("libiio_common.jl")
+include("libiio_api.jl")
 
 end # module
