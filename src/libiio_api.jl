@@ -1,6 +1,6 @@
 # Julia wrapper for header: iio.h
 # Automatically generated using Clang.jl
-libiio = "libiio"
+const libiio = "libiio"
 
 function iio_create_scan_context(backend, flags)
     ccall((:iio_create_scan_context, libiio), Ptr{iio_scan_context}, (Cstring, UInt32), backend, flags)
